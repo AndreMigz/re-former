@@ -1,0 +1,95 @@
+// Import Bootstrap Styles
+@import "bootstrap";
+
+//Custom CSS
+.card {
+    cursor: pointer;
+    margin: 200px auto;
+    width:350px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, .2);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+    h1{
+        margin-bottom: 10px;
+    }
+
+    .error-list {
+        text-align: left;
+    }
+    .users-list {
+        text-align: left;
+    }
+    
+    .input{
+        line-height: 28px;
+        border: 2px solid transparent;
+        border-bottom-color: #777;
+        width: 250px;
+        font-size: 14px;
+        padding: .2rem 0;
+        outline: none;
+        background: transparent;
+        color: #0d0c22;
+        transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .input[type=password]{
+        margin-bottom: 20px;
+    }
+    .btn {
+        width: 250px;
+        margin-top: 15px;
+        margin-bottom: 20px
+    }
+    .link {
+        border: 1px solid rgb(119, 173, 255);
+        padding: 5px;
+        text-decoration: none
+    }
+    .link:hover {
+        background-color: rgb(119, 173, 255);
+        color: white;
+    }
+}
+
+// Flashes
+.flash {
+    @extend .alert;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+
+    &.notice {
+        @extend .alert-success;
+    }
+    &.alert {
+        @extend .alert-danger;
+    }
+}
+
+//Errors
+
+section.errors {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+
+    h2 {
+        color: #dc3545;
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+}
+
+.card:hover {
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+}
